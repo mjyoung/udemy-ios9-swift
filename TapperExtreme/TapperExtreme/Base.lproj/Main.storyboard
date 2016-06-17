@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -71,6 +72,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="1le-9g-4HJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4FB-mH-yKe"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FGR-vF-Wu6" secondAttribute="bottom" constant="65" id="67O-sb-p6n"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BZZ-gw-zzh" secondAttribute="bottom" id="8KH-7l-ThO"/>
                             <constraint firstItem="FGR-vF-Wu6" firstAttribute="centerX" secondItem="QHw-ov-0ni" secondAttribute="centerX" id="Jki-US-FDF"/>
@@ -82,6 +84,7 @@
                             <constraint firstItem="FGR-vF-Wu6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jH6-YQ-vTV"/>
                             <constraint firstAttribute="trailing" secondItem="BZZ-gw-zzh" secondAttribute="trailing" id="l4K-Wm-6Al"/>
                             <constraint firstItem="qD9-Jf-uiP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="71" id="lnm-Bt-csi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1le-9g-4HJ" secondAttribute="trailing" id="mFO-ih-Fv3"/>
                             <constraint firstItem="BZZ-gw-zzh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mJw-G2-eRA"/>
                             <constraint firstItem="cgh-PJ-VfT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vJy-Sb-81c"/>
                             <constraint firstItem="BZZ-gw-zzh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zJ1-2W-S5a"/>

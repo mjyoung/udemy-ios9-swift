@@ -51,10 +51,24 @@ class ViewController: UIViewController {
     @IBAction func onCoinButtonPress(sender: UIButton!) {
         currentTaps += 1
         if currentTaps >= maxTaps {
-            tapsLbl.text = "You win!"
+            tapsLbl.text = "You win! Restarting..."
+            let timerDelay = 3.0 // in seconds
+            var timer = NSTimer()
+            timer = NSTimer.scheduledTimerWithTimeInterval(timerDelay, target:self, selector: #selector(ViewController.restartGame), userInfo: nil, repeats: false)
         } else {
             tapsLbl.text = String(maxTaps - currentTaps) + " taps left!"
         }
+    }
+    
+    func restartGame() {
+        maxTaps = 0
+        currentTaps = 0
+        tapsTxt.text = ""
+        logoImg.hidden = false
+        tapsTxt.hidden = false
+        playBtn.hidden = false
+        coinBtn.hidden = true
+        tapsLbl.hidden = true
     }
     
 }
